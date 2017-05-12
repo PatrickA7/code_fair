@@ -5,8 +5,11 @@
 <head>
     
 <meta http-equiv="content-type" content="text/html; charset=uf\tf-8"/>
-<link type="text/css" rel="stylesheet" href="main.css"/>
-    </head>
+<link type="text/css" rel="stylesheet" href="css/main.css"/>
+<link type="text/css" rel="stylesheet" href="css/lib/jquery.bxslider.min.css"/>
+<script type="text/javascript" src="js/lib/jquery-3.2.0.js"></script>
+<script type="text/javascript" src="js/lib/jquery.bxslider.min.js"></script>
+</head>
     
 <body>
     <div clas="section_one light">
@@ -45,29 +48,31 @@
     
     
     <div class="slider">
-        <di class="wrapper">
-            <div id="slider_img">
-            <img src="images/placeholder_image.png">
+        <div class="wrapper">
+            <div id="slides">
+                <ul class="bxslider">
+                    <li><img src="images/placeholder_image.png"/></li>
+                    <li><img src="images/codecode.jpg"/></li>
+                </ul>
             </div>
-        
-        </di>
+        </div>
     </div>
     
     <div class="timer">
         <di class="wrapper">
             <div id="timer_img">
-            <img src="images/jquery-countdown-timer.jpg">
+            <p id="countdown"></p>
             </div>
         
         </di>
     </div>
         <div class="arrow">
-        <di class="wrapper">
+        <div class="wrapper">
             <div id="arrow_img">
             <img src="images/Down-Arrow-PNG-Clipart.png">
             </div>
         
-        </di>
+        </div>
     </div>
     
     <div class="bodytext">
@@ -97,15 +102,17 @@
     </div>
     
         <div class="arrow">
-        <di class="wrapper">
+        <div class="wrapper">
             <div id="arrow_img">
             <img src="images/Down-Arrow-PNG-Clipart.png">
             </div>
         
-        </di>
+        </div>
     </div>
     
 
 </body>
+
+<script type="text/javascript" src="js/main.js"></script>
  
 </html>
