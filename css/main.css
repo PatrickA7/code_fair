@@ -2,46 +2,23 @@
 {
     margin: 0px;
     padding: 0px;
+    font-family: 'Oxygen';
 }
 
 #clear
 {
     clear:both;
 }
-.section_one
-{
-    width: 100%;
+
+.top_of_page{
+    border-bottom: 1px solid dimgrey;
+    padding-bottom: 5%;
 }
+ 
 .wrapper
 {
     width: 90%;
     margin: auto;
-}
-
-#top_left
-{
-    display: inline-block;
-}
-
-/*===========================Search========================*/
-#search
-{
-    float: right;
-}
-#textstyle
-{
-    height: 30px;
-    border-radius: 8px;
-}
-#buttonstyle
-{
-    background-color:darkgreen;
-    color: white;
-    padding: 7px;
-    margin-top: 5%;
-    border-radius: 8px;
-    width: 70px;
-    border: 1px solid green;
 }
 /*===========================logo========================*/
 #logo_left
@@ -52,43 +29,85 @@
 }
 #logo_left img
 {
-    height: 80px;
+    height: 50px;
     width: 100%;
     margin-top: 4%;
 }
 
 /*===========================Nav========================*/
-ul
+.naviagtion >ul
 {
     background-color: white;
-    width: 79%;
-    float: right;
+    width: 60%;
+    float: left;
     display: inline-block;
     margin-top: 1%;
+    text-align: right;
+    
     
 
 }
-ul li
+.naviagtion> ul> li
 {
-    width:15%;
     display: inline-block;
-    height: 70%;
-    line-height: 85px;
+    height: 50%;
+    line-height: 45px;
     text-align: center;
+    margin-right: 2%;
+    
 }
-ul li a
+.naviagtion> ul> li> a
 {
     color: black;
     text-decoration: none;
     display: block;
     
 }
-ul li a:hover
+.naviagtion> ul> li> a:hover
 {
     background-color: deeppink;
 }
+/*===========================Search========================*/
+
+#top_div
+{
+    display: inline-block;
+    width: 18%;
+    float: right;
+    margin-top: 2%;
+   
+}
+#textstyle
+{
+    height: 30px;
+    border-radius: 8px;
+    width: 120px;
+}
+#buttonstyle
+{
+    background-color:darkgreen;
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+    width: 70px;
+    border: 1px solid green;
+}
+
+/*============================================================*/
+/*===========================HOME PAGE========================*/
+/*============================================================*/
 
 /*===========================Slider========================*/
+.sliders {
+    width: 90%;
+    height: 20%;
+}
+.bxslider >li {
+    width: 90%;
+    height: 20%;
+    
+}
+
 
 
 /*===========================timer========================*/
@@ -96,12 +115,14 @@ ul li a:hover
 {
     width: 90%;
     margin: auto;
-    height: 250px;
+    padding-top: 2%;
+    height: 10%;
+   
 }
 #timer_img img
 {
     width: 100%;
-    height: 250px
+    height: 150px
 }
 
 #countdown
@@ -110,33 +131,60 @@ ul li a:hover
     font-size: 60px;
 }
 /*=========================Arrow=======================*/
-.arrow
+.arrow_1
 {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    height: 100px;
+    height: 50px;
+    float: center;
+    
 }
 #arrow_img img
 {
     height: 50px;
     padding-left: 50%;
+    float: center;
   
 }
-/*=========================body text======================*/
-.bodytext
-{
-    width: 73%;
+.arrow_2{
+    width: 100%;
     margin: auto;
-    border: 1px solid grey;
-    
+    height: 50px;
+    background-color: dimgray;
 }
-h2
+.arrow_3{
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    background-color: lightgray;
+}
+
+/*=========================body text======================*/
+.bodytext{
+    background-color:lightgray;
+    width: 100%;
+    height: 480px;
+}
+.mainhead
+{
+    width: 60%;
+    height: 350px;
+    margin-top: 5%;
+    float: left;
+    margin-left: 20%;
+    border: 1px solid grey;
+}
+.mainhead> h2
 {
     text-align: center;
+    font-size: 36px;
 }
-p
+.mainhead> p
 {
     margin-top: 2%;
+    font-size: 30px;
+    text-align: center;
+    
 }
 /*========================Sub body text Left ======================*/
 
@@ -144,11 +192,822 @@ p
 {
     display: inline-block;
     border: 1px solid red;
-    width: 30%;
+    width: 20%;
     float: right;
-    margin-right: 13%;
-    margin-top: 2%;
+    margin-right: 20%;
+    margin-top: 18%;
     border: 1px solid grey;
-    height: 170px;
+    height: 30px;
+    text-align: center;
+   
     
 }
+
+/*======================Section TWO===============================*/
+.section_two{
+    background-color: dimgrey;
+    width: 100%;
+    height:480px;
+}
+.mini_about{
+    width: 47%;
+    height: 350px;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    border: 1px solid grey;
+}
+.mini_about> h2{
+    text-align: left;
+    font-size: 36px;
+    color: gainsboro;
+}
+.mini_about> p
+{
+    margin-top: 2%;
+    color: gainsboro; 
+    text-align: left;
+    font-size: 25px;
+}
+
+/*======================Section THREE===============================*/
+.section_three{
+    background-color: lightgray;
+    width: 100%;
+    height:480px;
+}
+.awards_jobs{
+    width: 47%;
+    height: 350px;
+    margin-top: 5%;
+    float: right;
+    margin-right: 5%;
+    border: 1px solid grey;   
+}
+.awards_jobs> h2{
+    text-align: left;
+    font-size: 36px;   
+}
+.awards_jobs> p{
+   margin-top: 2%; 
+    text-align: left;
+    font-size: 25px;
+}
+/*======================Section FOUR===============================*/
+.section_four{
+    background-color: dimgrey;
+    width: 100%;
+    height:480px;
+    
+}
+.experts_judges{
+    width: 47%;
+    height: 350px;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    border: 1px solid grey;
+}
+.experts_judges> h2{
+    text-align: left;
+    font-size: 36px;
+    color: gainsboro;
+}
+.experts_judges> p
+{
+    margin-top: 2%;
+    text-align: left;
+    font-size: 25px;
+    color: gainsboro; 
+}
+/*======================Section FIVE===============================*/
+.section_five{
+    background-color: lightgray;
+    width: 100%;
+    height:480px;
+}
+.category_info{
+    width: 47%;
+    height: 350px;
+    margin-top: 5%;
+    float: right;
+    margin-right: 5%;
+    border: 1px solid grey;   
+}
+.category_info> h2{
+    text-align: left;
+    font-size: 36px;   
+}
+.category_info> p{
+    text-align: left;
+    font-size: 25px;
+   margin-top: 2%; 
+}
+/*======================Section SIX===============================*/
+.section_six{
+    background-color: dimgrey;
+    width: 100%;
+    height:480px;
+}
+.sponsor_info{
+    width: 47%;
+    height: 350px;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    border: 1px solid grey;
+}
+.sponsor_info> h2{
+    text-align: left;
+    font-size: 36px;
+    color: gainsboro;
+}
+.sponsor_info> p
+{
+    margin-top: 2%;
+    color: gainsboro;
+    text-align: left;
+    font-size: 25px;
+}
+
+/*===============================================================*/
+/*======================ABOUT PAGE===============================*/
+/*==============================================================*/
+
+
+/*======================QUICK NAV===============================*/
+.quick_nav_menu {
+    display: inline-block;
+    float: right;
+    width: 21%;
+    margin-right: 10%;
+
+
+    
+}
+.quick_nav_menu >ul{
+    width: 80%;
+    float: right;
+    display: inline-block;
+    padding-left: 10%;
+    border-left: 1px solid dimgrey;
+    
+}
+
+.quick_nav_menu > ul> li {
+    display: inline-block;
+    text-decoration:underline;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 1%;
+    border-bottom-style:groove;
+
+    
+}
+
+
+/*======================Section Thee ABOUT===============================*/
+
+
+.section_three_about {
+    float: left;
+    margin-left: 7%;
+}
+/*=======ABOUT================*/
+#main_about {
+    float: left;
+    height: 360px;
+    width: 60%;
+    border: 1px solid red;
+}
+#main_about> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========IMPORTANT DATES========================*/
+#main_important_dates {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_important_dates> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN PRIZES=======================*/
+#main_prizes {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_prizes> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN LOCATION=======================*/
+#main_location {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_location> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN STAFF=======================*/
+#main_staff {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_staff> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN SPONSORS=======================*/
+#main_sponsors {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_sponsors> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN JUDGES=======================*/
+#main_judges {
+   float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_judges> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN RULES======================*/
+#main_rules {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_rules> p {
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+/*========MAIN SIGN UP======================*/
+#main_sign_up {
+    float: left;
+    height: 360px;
+    width: 60%;
+    margin-top: 3%;
+    border: 1px solid red;
+}
+#main_sign_up> p {
+   margin-top: 3%;
+    font-size: 15px;
+    line-height: 250%;
+}
+
+
+/*===============================================================*/
+/*======================NEWS PAGE==============================*/
+/*==============================================================*/
+      
+.hero-image {
+    background-image: url(codecode.jpg);
+    height: 500px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* =========QUICK NAV==== THIS MAY OR MAY NOT BE INCLUDED SO FOR NOW HAS BEEN COMMENTED OUT
+
+.quick_nav_news >ul
+{
+    background-color: white;
+    width: 100%;
+    float: right;
+    display: inline-block;
+    padding-left: 30%; 
+    
+    
+
+}
+.quick_nav_news> ul> li
+{
+    width:15%;
+    display: inline-block;
+    line-height: 400%;
+    text-align: center;
+    font-size: 12px;
+   padding-left: 15%; 
+    
+}
+.quick_nav_news> ul> li> a
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+    
+    
+}
+.quick_nav_news> ul> li> a:hover
+{
+    background-color: deeppink;
+}
+*/
+/*===============CARD 1=========================*/
+      
+.card_img1 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 5%;
+    float: left;
+    
+}
+
+.card_text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 8px;
+}
+
+.card_text1 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text1 button:hover {
+    background-color: #555;
+    color: white;
+}
+/*===============CARD 2=========================*/
+.card_img2 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    
+}
+
+.card_text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text2 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text2 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/*===============CARD 3=========================*/
+.card_img3 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    
+}
+
+.card_text3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text3 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text2 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/*===============CARD 4=========================*/
+.card_img4 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 5%;
+    float: left;
+    
+    
+}
+
+.card_text4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text4 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text4 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/*===============CARD 5=========================*/
+
+.card_img5 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    
+}
+
+.card_text5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text5 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text5 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/*===============CARD 6=========================*/
+.card_img6 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    
+}
+
+.card_text6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text6 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text6 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/*===============CARD 7=========================*/
+
+.card_img7 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 5%;
+    float: left;
+    
+}
+
+.card_text7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text7 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text7 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/*===============CARD 8=========================*/
+.card_img8 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    
+}
+
+.card_text8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text8 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text8 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/*===============CARD 9=========================*/
+
+.card_img9 {
+    background-image: url(placeholder_image.png);
+    height: 310px;
+    width:30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 1%;
+    float: left;
+    
+}
+
+.card_text9 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card_text9 button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card_text9 button:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+
+
+
+
+/*=======================FOOTER================================*/
+/*======================FOR ALL OF============================*/
+/*======================THE PAGES==============================*/
+.footer_{
+    width: 100%;
+    background-color: beige;
+    height: 360px;
+}
+
+footer{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.copyright_{
+    text-align: center;
+    padding-top: 27%;
+   
+}
+/*===============List One=========================*/
+.footer_one_list_one >ul{
+    width: 90%;
+    float: right;
+    display: inline-block;
+    margin-top: 8%;
+}
+
+ .footer_one_list_one > ul> li {
+    width:16%;
+    display: inline-block;
+    height: 30%;
+    line-height: 35px;
+    text-align: center;
+    text-decoration:underline;
+    
+}
+.footer_one_list_one > ul> li> a {
+    color: black;
+    text-decoration:underline;
+    display: block;
+    
+}
+.footer_one_list_one > ul> li> a:hover {
+    background-color: deeppink;
+}
+/*===============List Two=========================*/
+.footer_one_list_two >ul{
+    width: 90%;
+    float: right;
+    display: inline-block;
+    margin-top: 3%;
+}
+
+ .footer_one_list_two > ul> li {
+     width:16%;
+    display: inline-block;
+    height: 30%;
+    line-height: 35px;
+    text-align: center;
+    text-decoration:underline
+    
+}
+.footer_one_list_two > ul> li> a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    
+}
+.footer_one_list_two > ul> li> a:hover {
+    background-color: deeppink;
+}
+/*===============List THREE=========================*/
+.footer_one_list_three >ul{
+    width: 90%;
+    float: right;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+ .footer_one_list_three > ul> li {
+    width:16%;
+    display: inline-block;
+    height: 30%;
+    line-height: 35px;
+    text-align: center;
+    text-decoration:underline
+    
+}
+.footer_one_list_three > ul> li> a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    
+}
+.footer_one_list_three > ul> li> a:hover {
+    background-color: deeppink;
+}
+
