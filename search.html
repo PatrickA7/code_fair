@@ -6,11 +6,16 @@
     
 <meta http-equiv="content-type" content="text/html; charset=uf\tf-8"/>
 <link type="text/css" rel="stylesheet" href="css/main.css"/>
-<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
-<link type="text/css" rel="stylesheet" href="css/lib/jquery.bxslider.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+<!-- Stuff for search bar-->
+<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400">
+<link rel="stylesheet" href="tipuesearch/css/normalize.css">
+<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+<!--end of search stuff-->
 <script type="text/javascript" src="js/lib/jquery-3.2.0.js"></script>
-<script type="text/javascript" src="js/lib/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
+<script type="text/javascript"src="tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
 </head>
     
 <body>   
@@ -22,7 +27,7 @@
     <div clas="section_one">
         <div class="wrapper">
             <div id="logo_left">
-            <a href="index.html"><img src="images/itcodefair_logo.png" alt=""></a>
+                <a href="index.html"><img src="images/itcodefair_logo.png" alt=""></a>
             </div>
             
              <div class ="naviagtion"> 
@@ -38,7 +43,7 @@
              <div clas="section_one light">
         <div class="wrapper" id="top_div">
           <div id="search">
-             <!--Search function jQuery library by Tipue http://www.tipue.com/search/ -->
+              <!--Search function jQuery library by Tipue http://www.tipue.com/search/ -->
              <form action="search.html">
                  <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
                  <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
@@ -49,9 +54,12 @@
         </div>
     </div>
     </section>
-    
- 
-                 
+  <form action="search.html">
+<div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+<div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+<div style="clear: both;"></div>
+</form>  
+<div id="tipue_search_content"></div>
  
     
     
@@ -61,14 +69,14 @@
 <div class="footer_">
     <footer class="footer_one"> 
     
-    <div class="footer_one_list_one">
+   <div class="footer_one_list_one">
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="news.html">Recent News</a></li>
-    <li>Schedule</li>
-    <li>Sign Up</li>
-    <li>Contact</li>  
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+    <li><a href="contact.html">Contact</a></li>  
     </ul>
     </div>
         
@@ -77,20 +85,20 @@
     <li><a href="about.html#main_about">About</a></li>
     <li><a href="about.html#main_prizes">Prizes</a></li>
     <li><a href="about.html#main_judges">Judging Panel</a></li>
-    <li>Schedule</li>
-    <li>Sponsors</li>
-    <li>Sign Up</li>  
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="about.html#main_sponsor">Sponsors</a></li>
+    <li><a href="signup.html">Sign Up</a></li>  
     </ul>
     </div>
         
     <div class="footer_one_list_three">
     <ul>
     <li><a href="about.html#main_location">Location</a></li>
-    <li>Tutorials</li>
-    <li>Become a Sponsor</li>
+    <li><a href="tutorials.html">Tutorials</a></li>
+    <li><a href="becomesponsor.html">Become a Sponsor</a></li>
     <li><a href="http://www.cdu.edu.au/">CDU Website</a></li>
     <li><a href="https://www.facebook.com/CharlesDarwinUniversity/">Facebook</a></li>
-    <li><a href="https://www.instagram.com/charlesdarwinuniversity/">Instagram</a></li>  
+    <li><a href="https://www.instagram.com/charlesdarwinuniversity/">Instagram</a></li> 
     </ul>
     </div>
    
@@ -119,8 +127,10 @@
     </footer>
         
     </div>
+<script type="text/javascript" src="js/lib/search_function.js"></script>
 </body>
 
-<script type="text/javascript" src="js/main.js"></script>
+
+
  
 </html>

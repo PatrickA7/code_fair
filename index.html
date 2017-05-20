@@ -7,6 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=uf\tf-8"/>
 <link type="text/css" rel="stylesheet" href="css/main.css"/>
 <link type="text/css" rel="stylesheet" href="css/lib/jquery.bxslider.min.css"/>
+<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
 <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/lib/jquery-3.2.0.js"></script>
 <script type="text/javascript" src="js/lib/jquery.bxslider.min.js"></script>
@@ -37,10 +38,11 @@
              <div clas="section_one light">
         <div class="wrapper" id="top_div">
           <div id="search">
-             <form>
-                 <input id="textstyle" type="text" name="textbox"/>
-                 <input id="buttonstyle" type="button" name="Search" value="Search"/>
-                </form>
+              <!--Search function jQuery library by Tipue http://www.tipue.com/search/ -->
+             <form action="search.html">
+                 <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+                 <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+              </form>
             </div>
         </div>
             </div>
@@ -251,5 +253,6 @@
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
  
 </html>
