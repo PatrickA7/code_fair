@@ -911,8 +911,24 @@
 
 
 
+/*=======================SIGN UP PAGE================================*/
+.sign_up_form {
+    margin: 2% 5%;
+}
 
+.form_heading {
+    padding-bottom: 5%;
+}
 
+.event_options {
+    padding-bottom: 3%;
+}
+
+.first_name_input, .surname_input, .email_input {
+    height: 20px;
+    display: inline-block;
+    margin-bottom: 0.5%;
+}
 
 /*=======================FOOTER================================*/
 /*======================FOR ALL OF============================*/
