@@ -1,3 +1,9 @@
+/* Team Names: Patrick Alegria, Reema Bali and James Olsen"/>
+Student numbers:s290816, s252001 and s290380*/
+
+
+
+/* This CSS file holds all styling used throughout our website except specific styles that were added using jQuery libaries */
 *
 {
     margin: 0px;
@@ -12,7 +18,8 @@
 
 .top_of_page{
     border-bottom: 1px solid dimgrey;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
+    background-color: #1c1829;
 }
  
 .wrapper
@@ -20,53 +27,89 @@
     width: 90%;
     margin: auto;
 }
+h1 {
+  font-size: 5vw;
+}
+
+h2 {
+  font-size: 5vh;
+}
+h3{
+    3vh;
+}
+h4{
+    font-size: 2vh;
+}
+p {
+  font-size: 3.5vmin;
+}
+
+a {
+      text-decoration:none;
+   }
 /*===========================logo========================*/
 #logo_left
 {
     display: inline-block;
     width: 20%;
+    height: auto;
     float: left;
+    background-color: #1c1829;
 }
 #logo_left img
 {
-    height: 50px;
-    width: 100%;
-    margin-top: 4%;
+    height: 20%;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 10%
 }
 
 /*===========================Nav========================*/
-.naviagtion >ul
-{
-    background-color: white;
-    width: 60%;
-    float: left;
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	background-color: #1c1829;
     display: inline-block;
-    margin-top: 1%;
-    text-align: right;
-    
-    
+    width: 60%;
+    float: right;
 
 }
-.naviagtion> ul> li
-{
-    display: inline-block;
-    height: 50%;
-    line-height: 45px;
-    text-align: center;
-    margin-right: 2%;
-    
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: left;
+    margin-top: 3%;
+    margin-right: 3%
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: #1c1829;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:10px 15px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
 }
-.naviagtion> ul> li> a
-{
-    color: black;
-    text-decoration: none;
-    display: block;
-    
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #ff8aaf; 
 }
-.naviagtion> ul> li> a:hover
-{
-    background-color: deeppink;
-}
+
+
 /*===========================Search========================*/
 
 #top_div
@@ -74,10 +117,10 @@
     display: inline-block;
     width: 18%;
     float: right;
-    margin-top: 1%;
+    margin-top: 2%;
    
 }
-#textstyle
+#tipue_search_input
 {
     height: 30px;
     border-radius: 8px;
@@ -85,25 +128,28 @@
 }
 #buttonstyle
 {
-    background-color:darkgreen;
+    background-color:#a8a7a7;
     color: white;
     padding: 7px;
     border-radius: 8px;
     width: 70px;
-    border: 1px solid green;
+    border: 1px solid #a8a7a7;
 }
 
+#clear_search {
+    clear: both;
+}
 /*============================================================*/
 /*===========================HOME PAGE========================*/
 /*============================================================*/
 
 /*===========================Slider========================*/
 .sliders {
-    width: 90%;
+    width: 100%;
     height: 20%;
 }
 .bxslider >li {
-    width: 90%;
+    width: 100%;
     height: 20%;
     
 }
@@ -116,231 +162,279 @@
     width: 90%;
     margin: auto;
     padding-top: 2%;
-    height: 10%;
+    height: auto;
+    
    
 }
-#timer_img img
-{
-    width: 100%;
-    height: 150px
-}
-
 #countdown
 {
     text-align: center;
+    width: 100%;
     font-size: 60px;
+    height: auto;
+    color: black;
+    overflow: hidden;
 }
-/*=========================Arrow=======================*/
-.arrow_1
-{
-    width: 100%;
-    margin: auto;
-    height: 50px;
-    float: center;
-    
-}
-#arrow_img img
-{
-    height: 50px;
-    padding-left: 50%;
-    float: center;
-  
-}
-.arrow_2{
-    width: 100%;
-    margin: auto;
-    height: 50px;
-    background-color: dimgray;
-}
-.arrow_3{
-    width: 100%;
-    margin: auto;
-    height: 50px;
-    background-color: lightgray;
-}
-
 /*=========================body text======================*/
 .bodytext{
-    background-color:lightgray;
+    background-color:#a8a7a7;
     width: 100%;
-    height: 480px;
+    height:auto;
 }
 .mainhead
 {
-    width: 60%;
-    height: 350px;
+    width: 100%;
+    height: auto;
     margin-top: 5%;
     float: left;
-    margin-left: 20%;
-    border: 1px solid grey;
+    background-color:#a8a7a7;
+    
 }
 .mainhead> h2
 {
     text-align: center;
-    font-size: 36px;
+    color: #101010;
+    margin-top: 5%;
 }
 .mainhead> p
 {
     margin-top: 2%;
-    font-size: 30px;
     text-align: center;
+    color: #101010;
+   
     
 }
 /*========================Sub body text Left ======================*/
-
-#right_content
-{
+   #right_content{
+    border: none;
+    outline: 0;
     display: inline-block;
-    border: 1px solid red;
-    width: 20%;
-    float: right;
-    margin-right: 20%;
-    margin-top: 18%;
-    border: 1px solid grey;
-    height: 30px;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
     text-align: center;
-   
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 40%;
+    text-decoration:none;
+    margin-bottom: 3%;
+}
+
+
+
+#right_content:hover {
+    background-color: #555;
+    color: white;
+}
     
+   #left_content{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%;
+    text-decoration: none;
+}
+
+#left_content:hover {
+    background-color: #555;
+    color: white;
 }
 
 /*======================Section TWO===============================*/
 .section_two{
-    background-color: dimgrey;
+    background-color:#474747;
     width: 100%;
-    height:480px;
+    height:441px;
+    overflow: hidden;
 }
 .mini_about{
-    width: 47%;
+    width: 41.5%;
     height: 350px;
     margin-top: 5%;
     float: left;
     margin-left: 5%;
-    border: 1px solid grey;
+    
+     
 }
 .mini_about> h2{
     text-align: left;
-    font-size: 36px;
-    color: gainsboro;
+    color: white;
 }
 .mini_about> p
 {
     margin-top: 2%;
-    color: gainsboro; 
+    color:  white; 
     text-align: left;
-    font-size: 25px;
 }
-
+.section_img1 >img{
+    height: auto;
+    width:49%;
+    float: left;
+    margin-left: 4.4%;
+    
+}
 /*======================Section THREE===============================*/
 .section_three{
-    background-color: lightgray;
+    background-color: #a8a7a7;
     width: 100%;
-    height:480px;
+    height:auto;
+    overflow: hidden;
 }
 .awards_jobs{
-    width: 47%;
-    height: 350px;
+    width: 41.5%;
+    height: auto;
     margin-top: 5%;
     float: right;
-    margin-right: 5%;
-    border: 1px solid grey;   
+    margin-right: 3%;
+       
 }
 .awards_jobs> h2{
-    text-align: left;
-    font-size: 36px;   
+    text-align: left;  
+    color: #101010;
 }
 .awards_jobs> p{
    margin-top: 2%; 
     text-align: left;
-    font-size: 25px;
+    color: #101010;
+}
+.section_img2 >img{
+    height:auto;
+    width:51%;
+    float: left;
+    margin-right: .3%;
+    
+    
 }
 /*======================Section FOUR===============================*/
 .section_four{
-    background-color: dimgrey;
+    background-color: #474747;
     width: 100%;
-    height:480px;
+    height:auto;
+    overflow: hidden;
     
 }
 .experts_judges{
-    width: 47%;
-    height: 350px;
+    width: 45%;
+    height: auto;
     margin-top: 5%;
     float: left;
     margin-left: 5%;
-    border: 1px solid grey;
 }
 .experts_judges> h2{
     text-align: left;
-    font-size: 36px;
-    color: gainsboro;
+    color:  white;
 }
 .experts_judges> p
 {
     margin-top: 2%;
     text-align: left;
-    font-size: 25px;
-    color: gainsboro; 
+    color:  white; 
 }
+.section_img3 >img{
+    height:auto;
+    width:49%;
+    float: left;
+    margin-left: 1%;
+    
+}
+
 /*======================Section FIVE===============================*/
 .section_five{
-    background-color: lightgray;
+    background-color: #a8a7a7;
     width: 100%;
-    height:480px;
+    height:auto;
+    overflow: hidden;
 }
 .category_info{
-    width: 47%;
-    height: 350px;
+    width: 41.3%;
+    height: auto;
     margin-top: 5%;
     float: right;
     margin-right: 5%;
-    border: 1px solid grey;   
+       
 }
 .category_info> h2{
     text-align: left;
-    font-size: 36px;   
+    color: #101010;
 }
 .category_info> p{
     text-align: left;
-    font-size: 25px;
-   margin-top: 2%; 
+    margin-top: 2%; 
+    color: #101010;
+}
+.section_img4 >img{
+    height: auto;
+    width:51%;
+    float: left;
+    margin-right: .3%;
+    
+    
 }
 /*======================Section SIX===============================*/
 .section_six{
-    background-color: dimgrey;
+    background-color: #474747;
     width: 100%;
-    height:480px;
+    height:auto;
+    overflow: hidden;
 }
 .sponsor_info{
-    width: 47%;
-    height: 350px;
+    width: 41.3%;
+    height: auto;
     margin-top: 5%;
     float: left;
     margin-left: 5%;
-    border: 1px solid grey;
+    
 }
 .sponsor_info> h2{
     text-align: left;
-    font-size: 36px;
-    color: gainsboro;
+    color:  white;
 }
 .sponsor_info> p
 {
     margin-top: 2%;
-    color: gainsboro;
+    color:  white;
     text-align: left;
-    font-size: 25px;
 }
-
+.sponsor_list_homepage > img{
+    height: auto;
+    width: 22%;
+    padding: .5%;
+    margin-left: 1%;
+    margin-top: 3%;
+    display: inline-block;
+}
+.spons_img {
+    width: 49%;
+    height: auto;
+    float: right;
+}
 /*===============================================================*/
 /*======================ABOUT PAGE===============================*/
 /*==============================================================*/
 
-
+.main_image >img{
+    width: 60%;
+    height: auto;
+    float: left;
+    
+    margin-top: 4%;
+    margin-bottom: 3%
+}
 /*======================QUICK NAV===============================*/
 .quick_nav_menu {
     display: inline-block;
     float: right;
     width: 21%;
     margin-right: 10%;
+    list-style: none;
+    
 
 
     
@@ -350,18 +444,20 @@
     float: right;
     display: inline-block;
     padding-left: 10%;
-    border-left: 1px solid dimgrey;
+    border-left-style:outset;
+    list-style: none;
     
 }
 
 .quick_nav_menu > ul> li {
     display: inline-block;
-    text-decoration:underline;
+    text-decoration:none;
     width: 100%;
     height: 40px;
     font-size: 16px;
     margin-top: 1%;
     border-bottom-style:groove;
+    list-style: none;
 
     
 }
@@ -373,131 +469,367 @@
 .section_three_about {
     float: left;
     margin-left: 7%;
+    padding-bottom: 5%;
 }
 /*=======ABOUT================*/
 #main_about {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
-    border: 1px solid red;
+    border-bottom-style:outset;
 }
 #main_about> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
 }
 /*========IMPORTANT DATES========================*/
 #main_important_dates {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
+    
 }
+
 #main_important_dates> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
+}
+.the_text{
+    width: 100%;
+}
+.the_text2{
+    width: 100%;
+}
+.date_one{
+    border: 1px solid grey;
+    display: inline-block;
+    width: 30%;
+    padding: 1%;
+    margin-top: 5%;
+    box-shadow: 1px 1px 5px #888888;
+    line-height: 150%;
+    
+    
+}
+.date_two{
+    border: 1px solid grey;
+    display: inline-block;
+    width: 30%;
+    padding: 1%;
+    margin-top: 5%;
+    box-shadow: 1px 1px 5px #888888;
+    line-height: 150%;
+    margin-left: 1%;
+    
+}
+.date_three {
+    border: 1px solid grey;
+    display: inline-block;
+    width: 30%;
+    margin-top: 5%;
+    padding: 1%;
+    box-shadow: 1px 1px 5px #888888;
+    line-height: 150%;
+    margin-bottom: 5%;
+    margin-left: 1%;
 }
 /*========MAIN PRIZES=======================*/
 #main_prizes {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
 }
 #main_prizes> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
 }
 /*========MAIN LOCATION=======================*/
 #main_location {
     float: left;
-    height: 360px;
+    height: a;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
 }
 #main_location> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
 }
 /*========MAIN STAFF=======================*/
 #main_staff {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
 }
 #main_staff> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
 }
+/* referance used to make card was this website: https://www.w3schools.com/howto/howto_css_cards.asp */
+.sami{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 30%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 15%;
+    line-height: 30px;
+    padding: 2%;
+    vertical-align: top;
+}
+
+.sami>img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.barbara{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:30%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    line-height: 30px;
+    padding: 2%;
+    vertical-align: top;
+}
+
+.barbara>img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
 /*========MAIN SPONSORS=======================*/
 #main_sponsors {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
 }
 #main_sponsors> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
+}
+.button_main{
+    padding: 3%
+    
+}
+
+.button_main:hover {
+    background-color: #555;
+    color: white;
 }
 /*========MAIN JUDGES=======================*/
 #main_judges {
    float: left;
-    height: 360px;
+    height:auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
+    
 }
 #main_judges> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
 }
 /*========MAIN RULES======================*/
 #main_rules {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
 }
 #main_rules> p {
     margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
 }
 /*========MAIN SIGN UP======================*/
 #main_sign_up {
     float: left;
-    height: 360px;
+    height: auto;
     width: 60%;
     margin-top: 3%;
-    border: 1px solid red;
+    border-bottom-style:groove;
+    
 }
 #main_sign_up> p {
    margin-top: 3%;
-    font-size: 15px;
     line-height: 250%;
+    color: #2f4249;
+}
+
+/*===============================================================*/
+/*======================EVENTS===================================*/
+/*==============================================================*/
+
+
+/*======================QUICK NAV===============================*/
+.quick_nav_menu1 {
+    display: inline-block;
+    float: right;
+    width: 21%;
+    margin-right: 9%;
+    text-decoration: none;
+    margin-top: 5%;
+    color: #2f4249;
+
+
+    
+}
+.quick_nav_menu1 >ul{
+    width: 80%;
+    float: right;
+    display: inline-block;
+    padding-left: 10%;
+    border-left-style:outset;
+    text-decoration: none;
+    color: #2f4249;
+   
+    
+}
+
+.quick_nav_menu1 > ul> li {
+    display: inline-block;
+    text-decoration:none;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 1%;
+    border-bottom-style:groove;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    list-style: none;
+    color: #2f4249;
+
+    
 }
 
 
+/*======================Section Thee EVENTS===============================*/
+
+
+.section_three_events {
+    float: left;
+    margin-left: 7%;
+    padding-bottom: 5%;
+}
+/*=======Business inovation challenge================*/
+#main_event {
+    float: left;
+    height: auto;
+    width: 60%;
+    margin-top: 5%;
+    border-bottom-style:outset;
+}
+#main_event> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
+}
+/*========Coding comp=======================*/
+#coding_comp {
+    float: left;
+    height: auto;
+    width: 60%;
+    margin-top: 3%;
+    border-bottom-style:outset;
+}
+#coding_comp> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
+}
+/*========Poster comp=======================*/
+#poster_comp {
+    float: left;
+    height: auto;
+    width: 60%;
+    margin-top: 5%;
+    border-bottom-style:outset;
+}
+#poster_comp> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%
+}
+/*========Hour Workshops======================*/
+#hour_workshops {
+    float: left;
+    height: auto;
+    width: 60%;
+    margin-top: 4%;
+    border-bottom-style:groove; ;
+}
+#hour_workshops> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%
+}
+
+/*========Speed Dating=======================*/
+#speed_dating {
+    float: left;
+    height: auto;
+    width: 60%;
+    margin-top: 4%;
+    border-bottom-style:groove; 
+   
+}
+#speed_dating> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
+}
+/*========Speed Dating=======================*/
+#academic_awards {
+    float: left;
+    height: auto;
+    width: 60%;
+    margin-top: 7%;
+   
+}
+#academic_awards> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    
+}
 /*===============================================================*/
 /*======================NEWS PAGE==============================*/
 /*==============================================================*/
+
+/* to create this page this websites were used as  referances: http://www.the-art-of-web.com/css/textoverimage/  |   https://css-tricks.com/text-blocks-over-image/ */
       
 .hero-image {
-    background-image: url(codecode.jpg);
+    background-image: url(banner1.jpg);
     height: 500px;
     width:100%;
     background-position: center;
@@ -513,7 +845,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color:#101010;
 }
 
 .hero-text button {
@@ -532,428 +864,291 @@
     color: white;
 }
 
-/* =========QUICK NAV==== THIS MAY OR MAY NOT BE INCLUDED SO FOR NOW HAS BEEN COMMENTED OUT
 
-.quick_nav_news >ul
-{
-    background-color: white;
-    width: 100%;
-    float: right;
-    display: inline-block;
-    padding-left: 30%; 
-    
-    
-
-}
-.quick_nav_news> ul> li
-{
-    width:15%;
-    display: inline-block;
-    line-height: 400%;
+.wrapper4 {
+    width: 90%;
     text-align: center;
-    font-size: 12px;
-   padding-left: 15%; 
-    
-}
-.quick_nav_news> ul> li> a
-{
-    color: black;
-    text-decoration: none;
-    display: block;
-    
-    
-}
-.quick_nav_news> ul> li> a:hover
-{
-    background-color: deeppink;
-}
-*/
-/*===============CARD 1=========================*/
-      
-.card_img1 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    margin-right: 10%;
     margin-left: 5%;
-    float: left;
-    
+    margin-bottom: 2%;
 }
-
-.card_text1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-    color: white;
-    text-align: center;
-    font-size: 8px;
-}
-
-.card_text1 button {
-    border: none;
-    outline: 0;
+.news {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    height: 50%;
     display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
+    margin: 1%;
+    margin-right: 3%;
+    margin-top: 4%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.news img{
+
+width: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.news:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.shell {
+    padding: 2px 16px;
+}
+==========================================================*/
+/*===========================SPONSERS PAGE==================================*/
+.title_investor{
+    margin-top: 3%;
     text-align: center;
-    cursor: pointer;
 }
-
-.card_text1 button:hover {
-    background-color: #555;
-    color: white;
-}
-/*===============CARD 2=========================*/
-.card_img2 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 1%;
-    float: left;
-    
-}
-
-.card_text2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text2 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
+.wrapper2 {
+    width: 90%;
     text-align: center;
-    cursor: pointer;
-}
-
-.card_text2 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-
-/*===============CARD 3=========================*/
-.card_img3 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 1%;
-    float: left;
-    
-}
-
-.card_text3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text3 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card_text2 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-/*===============CARD 4=========================*/
-.card_img4 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    margin-right: 10%;
     margin-left: 5%;
-    float: left;
-    
-    
+    margin-bottom: 2%;
 }
-
-.card_text4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text4 button {
-    border: none;
-    outline: 0;
+.investors {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    height: 50%;
     display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
+    margin: 1%;
+    margin-right: 3%;
+    margin-top: 4%;
+    text-align: left;
+    vertical-align: top;
 }
 
-.card_text4 button:hover {
-    background-color: #555;
-    color: white;
+.investors img{
+
+width: 100%;
 }
 
-/*===============CARD 5=========================*/
-
-.card_img5 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 1%;
-    float: left;
-    
+/* On mouse-over, add a deeper shadow */
+.investors:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card_text5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+/* Add some padding inside the card container */
+.shell {
+    padding: 2px 16px;
 }
 
-.card_text5 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card_text5 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-/*===============CARD 6=========================*/
-.card_img6 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 1%;
-    float: left;
-    
-}
-
-.card_text6 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text6 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card_text6 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-
-/*===============CARD 7=========================*/
-
-.card_img7 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 5%;
-    float: left;
-    
-}
-
-.card_text7 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text7 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card_text7 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-/*===============CARD 8=========================*/
-.card_img8 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 1%;
-    float: left;
-    
-}
-
-.card_text8 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text8 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card_text8 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-/*===============CARD 9=========================*/
-
-.card_img9 {
-    background-image: url(placeholder_image.png);
-    height: 310px;
-    width:30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 1%;
-    float: left;
-    
-}
-
-.card_text9 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.card_text9 button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card_text9 button:hover {
-    background-color: #555;
-    color: white;
-}
-
-
-
-/*=======================SIGN UP PAGE================================*/
+/*===============================================================*/
+/*======================Sign up==============================*/
+/*==============================================================*/
 .sign_up_form {
     margin: 2% 5%;
 }
 
 .form_heading {
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
-.event_options {
-    padding-bottom: 3%;
+.general_info {
+    padding-bottom: 2%;
 }
 
-.first_name_input, .surname_input, .email_input {
+.first_name_input, .surname_input, #email_input, .course_name, .study_start {
     height: 20px;
     display: inline-block;
     margin-bottom: 0.5%;
 }
+
+.error_message {
+    color: red;
+}
+
+.extra_form, #group_table {
+    display: none;
+    padding-bottom: 2%;
+}
+
+.event_options {
+    padding-bottom: 2%;
+}
+
+/* Keeping all text areas the same size, feel free to change */
+textarea {
+    width: 100%;
+    height: 10em;
+}
+
+/*===============================================================*/
+/*======================Sucessful Search page ==============================*/
+/*==============================================================*/
+.submit{
+    background-color: white;
+    width: 100%;
+    height:459px;
+}
+.sucess{
+    width: 41.3%;
+    height: 350px;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+       
+}
+.sucess> p{
+    text-align: left;
+    margin-top: 2%; 
+    color: #101010;
+}
+
+
+/*===============================================================*/
+/*======================Contact=============================*/
+/*==============================================================*/
+#wrapping{
+    width: 90%;
+}
+#contact1{
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+#contact1 >h2{
+    margin-bottom: 3%;
+    margin-top: 5%;
+    
+}
+.map>img{
+    margin-bottom: 3%;
+    height: auto;
+    
+}
+.map{
+    margin-bottom: 3%;
+    margin-left: 5%;
+    height: auto;
+}
+.map_two> img{
+    width: 60%;
+    margin-left: %;
+    margin-bottom: 3%;
+    height: auto;
+}
+.map_two{
+    margin-bottom: 3%;
+    margin-left: 5%;
+    height: auto;
+}
+
+
+/*===============================================================*/
+/*======================Articles==============================*/
+/*==============================================================*/
+.article_img >img{
+    width: 60%;
+    height: auto;
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 10%
+}
+
+#article1 {
+    float: left;
+    height: auto;
+    width: 60%;
+    border-bottom-style:outset;
+    margin-left: 10%;
+}
+#article1> p {
+    margin-top: 3%;
+    line-height: 250%;
+    color: #2f4249;
+    margin-bottom: 5%;
+}
+/*===============================================================*/
+/*======================Search 2==============================*/
+/*==============================================================*/
+#search2{
+    width: 100%;
+    margin-left: 10%;
+    margin: 5%;
+}
+
+/*===============================================================*/
+/*======================Buttons==============================*/
+/*==============================================================*/
+.button_main
+{
+    background-color: white;
+}
+.button_main button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 /*=======================FOOTER================================*/
 /*======================FOR ALL OF============================*/
 /*======================THE PAGES==============================*/
 .footer_{
     width: 100%;
-    background-color: beige;
-    height: 360px;
+    background-color: #1c1829;
+    
 }
 
-footer{
-    margin-left: 60px;
-    margin-right: 60px;
-}
+
 .copyright_{
     text-align: center;
-    padding-top: 27%;
+    color: white;
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+    margin-top: 4%;
+
    
+}
+
+.social_media_icons_homepage{
+    width: 100%;
+    height: 100%;
+    background-color:#1c1829;
+    
+}
+.icon_style{
+    margin-left: 4%;
+    margin-right: 5%
+    
+}
+/*greyscale referancing website https://www.w3schools.com/cssref/css3_pr_filter.asp */
+.social_icon> img{
+    height: auto;
+    width: 3%;
+    padding: .5%;
+    margin-left: 2%;
+    margin-top: 2%;
+    display: inline-block;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    
 }
 /*===============List One=========================*/
 .footer_one_list_one >ul{
     width: 90%;
-    float: right;
+    text-align: center;
     display: inline-block;
-    margin-top: 8%;
+    margin-top: 3%;
+    margin-left: 3%;
+    
 }
 
  .footer_one_list_one > ul> li {
@@ -962,24 +1157,27 @@ footer{
     height: 30%;
     line-height: 35px;
     text-align: center;
-    text-decoration:underline;
+    text-decoration:none;
+    
     
 }
 .footer_one_list_one > ul> li> a {
     color: black;
-    text-decoration:underline;
+    text-decoration:none;
     display: block;
+    color: white;
     
 }
 .footer_one_list_one > ul> li> a:hover {
-    background-color: deeppink;
+    background-color: #ff8aaf;
 }
 /*===============List Two=========================*/
 .footer_one_list_two >ul{
     width: 90%;
-    float: right;
+    text-align: center;
     display: inline-block;
     margin-top: 3%;
+    margin-left: 3%;
 }
 
  .footer_one_list_two > ul> li {
@@ -988,24 +1186,28 @@ footer{
     height: 30%;
     line-height: 35px;
     text-align: center;
-    text-decoration:underline
+    text-decoration:none;
+    
     
 }
 .footer_one_list_two > ul> li> a {
     color: black;
     text-decoration: none;
     display: block;
+    color: white;
     
 }
 .footer_one_list_two > ul> li> a:hover {
-    background-color: deeppink;
+    background-color: #ff8aaf;
 }
 /*===============List THREE=========================*/
 .footer_one_list_three >ul{
     width: 90%;
-    float: right;
+    text-align: center;
     display: inline-block;
     margin-top: 2%;
+    margin-left: 3%;
+    margin-bottom: 4%
 }
 
  .footer_one_list_three > ul> li {
@@ -1014,16 +1216,226 @@ footer{
     height: 30%;
     line-height: 35px;
     text-align: center;
-    text-decoration:underline
+    text-decoration:none;
+    
     
 }
 .footer_one_list_three > ul> li> a {
     color: black;
     text-decoration: none;
     display: block;
+    color: white;
     
 }
 .footer_one_list_three > ul> li> a:hover {
-    background-color: deeppink;
+    background-color: #ff8aaf;
+}
+/*=============SPONSER LIST=========================*/
+.spons_img2 {
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    
+}
+.sponse_style{
+    margin-left: 4%;
+    margin-right: 5%
+    
+}
+.sponsor_list_otherp > img{
+    height: 40%;
+    width: 10%;
+    padding: .5%;
+    margin-left:2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: inline-block;
 }
 
+
+/* Media Queries
+--------------------------------------------- */
+/* Website tutorial: https://codepen.io/andornagy/pen/RNeydj?editors=1100 used to help create the mobile drop down menu*/
+
+@media only screen and (max-width : 768px) {
+
+#logo_left {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: left;
+		float: none;
+	}
+    .top_of_page{
+        padding-bottom: 10%
+    }
+
+nav {
+		margin: 0;
+        float: right;
+        width: 20%;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+.toggle + a,
+.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+.toggle {
+		display: block;
+		background-color: #1c1829;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+.toggle:hover {
+		background-color: #000000;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+nav ul ul .toggle,
+nav ul ul a {
+		padding: 0 40px;
+	}
+
+nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+nav a:hover,
+nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+nav ul li ul li .toggle,
+nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+nav ul li ul li .toggle,
+nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+nav ul ul li:hover > ul,
+nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+nav ul ul li {
+    display: block;
+    width: 100%;
+}
+
+nav ul ul ul li {
+	position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+/* End of Nav for this media query*/
+  
+img{
+    max-width:  100%;
+    height: auto;
+}
+    #top_div{
+    float: left;
+    height: 3vh;
+    border-radius: 8px;
+    width: 15vh;
+        
+    }
+    #search{
+        
+        float: center;
+        width: 100%;
+    }
+#buttonstyle
+{
+    display: none;
+    }
+    
+}
+
+@media only screen and (max-width : 330px) {
+
+nav ul li {
+		display:block;
+		width: 94%;
+}
+    /* End of Nav for this media query*/
+       p{
+       max-width: 10%;
+    }
+    
+    img{
+        max-width:  100%;
+    }
+    .button_main{
+        width: 100%;
+        font-size: 10px;
+        position: absolute;
+    }
+    #logo_left {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: left;
+		float: none;
+	}
+#search{
+        display: inline-block;
+        float: none;
+        width: 100%;
+    }
+#tipue_search_input
+{
+    height: 3vh;
+    border-radius: 8px;
+    width: 4vh;
+}
+#buttonstyle
+{
+    display: none;
+    }
+
+    .footer_{
+        max-width: 100%;
+        min-width: 20%;
+    }
+
+
+}
+
+}

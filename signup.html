@@ -1,134 +1,273 @@
 <!DOCTYPE html>
 
-<html> 
+<html class="no-js"> 
 
 <head>
     
+<title>IT CODE FAIR| Sign Up</title>
+ <meta name="description" content="IT CODE FAIR 2017"/>
+ <meta name="keywords" content="HTML5,CSS,JS, HIT 226, IT CODE FAIR 2017"/>
+ <meta name="developers" content="Patrick Algeria, Reema Bali and James Olsen"/>
+ <meta name="studentid" content="s290816, sXXXXX and s290380"/>   
+    
+  
+ <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+	<link rel="shortcut icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+	<link rel="apple-touch-icon" href="/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/favicon-144.png">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+    
 <meta http-equiv="content-type" content="text/html; charset=uf\tf-8"/>
 <link type="text/css" rel="stylesheet" href="css/main.css"/>
-<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
 <link type="text/css" rel="stylesheet" href="css/lib/jquery.bxslider.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/lib/jquery-3.2.0.js"></script>
-<script type="text/javascript" src="js/lib/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/lib/modernizr-custom.min.js"></script>
 </head>
-    
-<body>   
+       <body>
     <div id="clear">
     </div>
     
     
-    <section class=" top_of_page">
+     <section class=" top_of_page">
     <div clas="section_one">
         <div class="wrapper">
             <div id="logo_left">
-            <a href="index.html"><img src="images/itcodefair_logo.png" alt=""></a>
+            <a href="index.html"><img src="images/IT CODE FAIR LOGOS77.png" alt=""></a>
             </div>
-            
-             <div class ="naviagtion"> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="news.html">Recent News</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-             <div clas="section_one light">
+               <div clas="section_one">
         <div class="wrapper" id="top_div">
           <div id="search">
-              <!--Search function jQuery library by Tipue http://www.tipue.com/search/ -->
              <form action="search.html">
-                 <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
-                 <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
-              </form>
+                 <input type="text" name="q" id="tipue_search_input">
+                 <input id="buttonstyle" type="button" name="Search" value="Search"/>
+                </form>
             </div>
         </div>
             </div>
+            <nav>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="schedule.html">Events</a></li>
+                <li><a href="news.html">Recent News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+          
         </div>
     </div>
     </section>
+ 
+                 
+    <div id="clear"></div>
+           
     
- <div class="sign_up_form">
-     <h1 class="form_heading">Sign Up</h1>
-    <form action="sign_up.php" method="post">
+ 
+     <div class="sign_up_form">
+    <noscript>
+           <h1>Oops...</h1>
+            <p>It seems you don't have JavaScript enabled. Please enable JavaScript and reload the page to sign up.</p>
+    </noscript>
+    <form name="sign_up" id="sign_up" action="sign_up.php" method="post">
+        <h1 class="form_heading">Sign Up</h1>
+        <div class="general_info">
+            <p>First Name</p><input type="text" name="First_Name" id="first_name" class="first_name_input" required><br>
+            <p>Surname</p><input type="text" name="Surname" id="surname" class="surname_input" required><br>
+            <p>Email Address</p><input type="text" name="Email_Address" id="email_input" required><br>
+            <pre class="error_message" id="email_error_message"></pre>
+        </div>
     <h2>Please select the events you are entering</h2>
         <div class="event_options">
-        <input type="checkbox" name="event1" value="School Hour of Code"> School Hour of Code<br>
-        <input type="checkbox" name="event2" value="Business Innovation Challenge"> Business Innovation Challenge<br>
-        <input type="checkbox" name="event3" value="Coding Challenge"> Coding Challenge<br>
-        <input type="checkbox" name="event4" value="Employer Speed Dating (for students)"> Employer Speed Dating (for students)<br>
-        <input type="checkbox" name="event5" value="Employer Speed Dating (for employers)"> Employer Speed Dating (for employers)<br>
+            <input type="checkbox" name="event[]" class="event_select" id="select_school_hour" value="School Hour of Code"> School Hour of Code<br>
+            <input type="checkbox" name="event[]" class="event_select" id="select_business_innovation" value="Business Innovation Challenge"> Business Innovation Challenge<br>
+            <input type="checkbox" name="event[]" class="event_select" id="select_coding_challenge" value="Coding Challenge"> Coding Challenge<br>
+            <input type="checkbox" name="event[]" class="event_select" id="select_speed_dating_students" value="Employer Speed Dating (for third year students)"> Employer Speed Dating (for third year students)<br>
+            <input type="checkbox" name="event[]" class="event_select" id="select_speed_dating_employers" value="Employer Speed Dating (for employers)"> Employer Speed Dating (for employers)<br>
+            <pre class="error_message" id="checkbox_error_message"></pre>
         </div>
-        First Name: <input type="text" name="first_name" class="first_name_input"><br>
-        Surname: <input type="text" name="surname" class="surname_input"><br>
-        Email Address: <input type="text" name="email_address" class="email_input"><br>
-        <button type="submit" class="submit_button">Submit</button>
+        
+        <div class="extra_form" id="school_hour_form">
+            <h2>School Hour of Code Entry</h2>
+            <p>This section should be filled out by a member of high school faculty</p>
+            <p>School Name</p>
+            <input type="text" name="School_Name" id="School_Name"><br>
+            <p>Number of students attending</p>
+            <input type="number" name="Number_of_Students" id="no_of_students"><br>
+            <p>Number of supervisors</p>
+            <input type="number" name="Number_of_Supervisors" id="no_of_supervisors"><br>
+        </div>
+        <div class="extra_form" id="business_innovation_form">
+            <h2>Business Innovation Challenge Entry</h2>
+            <p>What course are you currently studying?</p>
+            <input type="text" name="Course_Name" class="Course_Name" id="BI_course_name"><br>
+            <p>What part are you participating in?</p>
+            <select name="Business_Innovation_Entry_Letter" id="business_part">
+                <option value="Select">Select</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+            </select>
+        </div>
+        <div class="extra_form" id="coding_challenge_form">
+            <h2>Coding Challenge Entry</h2>
+            <p>What course are you currently studying?</p>
+            <input type="text" name="Name of Course" id="CC_course_name" class="course_name"><br>
+            <p>What year did you start studying?</p>
+            <input type="number" name="Course Start Date" id="CC_course_start" class="study_start"><br>
+            <p>Are you entering as an individual or a group?</p>
+            <select name="Individual_or_Group?"id="entry_status">
+                <option value="Select">Select</option>
+                <option value="Individual">Individual</option>
+                <option value="Group">Group</option>
+            </select>
+            <div id="group_table">
+            <h3>Please enter your group member's details</h3>
+            <table>
+                <tr>
+                    <th>Member 1</th>
+                    <th>Member 2</th>
+                    <th>Member 3</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>First Name</p><input type="text" name="Member_1_First_Name" id="member1_first_name" class="first_name_input"><br>
+                        <p>Surname</p><input type="text" name="Member_1_Surname" id="member1_surname" class="surname_input"><br>
+                        <p>Course Name</p><input type="text" name="Member_1_Course_Name" id="member1_course_name" class="course_name"><br>
+                        <p>Study Start Year</p><input type="number" name="Member_1_Course_Start" id="member1_study_start" class="study_start"><br>
+                    </td>
+                    <td>
+                        <p>First Name</p><input type="text" name="Member_2_First_Name" id="member2_first_name" class="first_name_input"><br>
+                        <p>Surname</p><input type="text" name="Member_2_Surname" id="member2_surname" class="surname_input"><br>
+                        <p>Course Name</p><input type="text" name="Member2_Course_Name" id="member2_course_name" class="course_name"><br>
+                        <p>Study Start Year</p><input type="number" name="Member_2_Course_Start" id="member2_study_start" class="study_start"><br>
+                    </td>
+                    <td>
+                        <p>First Name</p><input type="text" name="Member_3_First_Name" id="member3_first_name" class="first_name_input"><br>
+                        <p>Surname</p><input type="text" name="Member_3_Surname" id="member3_surname" class="surname_input"><br>
+                        <p>Course Name</p><input type="text" name="Member_3_Course_Name" id=""member3_course_name"" class="course_name"><br>
+                        <p>Study Start Year</p><input type="number" name="Member_3_Course_Start" id="member3_study_start" class="study_start"><br>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <h3>Project Information</h3>
+            <p>This section should total to approximately 250 words</p>
+            <div class="project_info">
+                <p>Outline, as concisely as possible what purpose/ problem was addressed in your project?</p>
+                <textarea name="Outline, as concisely as possible what purpose/ problem was addressed in your project?" id="info_part_A"></textarea>
+                <p>Outline, as concisely as possible, what was the context of use (business context or other context) in which the solution will be used?</p>
+                <textarea name="Outline, as concisely as possible, what was the context of use (business context or other context) in which the solution will be used?" id="info_part_B"></textarea>
+                <p>Outline, as concisely as possible, why your project should win</p>
+                <textarea name="Outline, as concisely as possible, why your project should win" id="info_part_C"></textarea>
+            </div>
+        </div>
+        <div class="extra_form" id="speed_dating_student_form">
+        <h2>Employer Speed Dating Entry (Students)</h2>
+            <p>Course Name</p><input type="text" name="Course_Taken" id="SD_course_name" class="course_name"><br>
+            <p>Study Start Year</p><input type="number" name="Course_Start_Year" id="SD_study_start" class="study_start"><br>
+            <p>Briefly explain why you want to be involved in speed dating</p>
+            <textarea name="Briefly explain why you want to be involved in speed dating" id="speed_dating_reason"></textarea>
+        </div>
+        <div class="extra_form" id="speed_dating_employer_form">
+        <h2>Employer Speed Dating Entry (Employer)</h2>
+            <p>Company Name</p><input type="text" name="Company_Name" id="company_name"><br>
+        </div>
+        <button type="submit" id="submit_button">Submit</button>
      </form>
 </div>
-                 
- 
-    
-    
-    
-    
-    
 <div class="footer_">
     <footer class="footer_one"> 
     
      <div class="footer_one_list_one">
+    <h2>About Us</h2>
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="news.html">Recent News</a></li>
-    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="schedule.html">Events</a></li>
     <li><a href="signup.html">Sign Up</a></li>
     <li><a href="contact.html">Contact</a></li>  
     </ul>
     </div>
         
     <div class="footer_one_list_two">
+    <h2>Event Information</h2>
     <ul>
-    <li><a href="about.html#main_about">About</a></li>
+   <li><a href="about.html#main_about">About</a></li>
     <li><a href="about.html#main_prizes">Prizes</a></li>
-    <li><a href="about.html#main_judges">Judging Panel</a></li>
-    <li><a href="schedule.html">Schedule</a></li>
-    <li><a href="about.html#main_sponsor">Sponsors</a></li>
-    <li><a href="signup.html">Sign Up</a></li>  
+    <li><a href="schedule.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html#main_location">Location</a></li>
+    <li><a href="sponsers.html">Sponsors</a></li>
     </ul>
     </div>
         
     <div class="footer_one_list_three">
+    <h2>Get Invovlved </h2>
     <ul>
-    <li><a href="about.html#main_location">Location</a></li>
     <li><a href="tutorials.html">Tutorials</a></li>
     <li><a href="becomesponsor.html">Become a Sponsor</a></li>
     <li><a href="http://www.cdu.edu.au/">CDU Website</a></li>
     <li><a href="https://www.facebook.com/CharlesDarwinUniversity/">Facebook</a></li>
-    <li><a href="https://www.instagram.com/charlesdarwinuniversity/">Instagram</a></li> 
+    <li><a href="https://www.instagram.com/charlesdarwinuniversity/">Instagram</a></li>
+         <li><a href="https://twitter.com/CDUni">Twitter</a></li>
     </ul>
-        </div>
-   
-    <div class="sponsor_list_footer">
-    <!--insert all sponsor images here-->
-        
-    <img>    
-        
     </div>
+        
+   <div id="clear"></div>
+        
+    <div class="spons_img2">
+    <div class="sponse_style">
+    <div class="sponsor_list_otherp">
+    <!--insert all sponsor images here-->       
+    <img class="NTG" src="images/logos/NTG.png">
+    <img class="ICTNT" src="images/logos/ICCTNT.png">
+    <img class="DIALOG" src="images/logos/Dialog.png">
+    <img class="CAPTOVATE" src="images/logos/captovate.png">
+    <img class="ACS" src="images/logos/ACS.png">
+    <img class="RADICAL" src="images/logos/RADICAL.png">
+    <img class="DOLPHIN" src="images/logos/dolphjin.png">
+    <img class="KINETIC" src="images/logos/KINITICIT.png">
+    <img class="JACKADDER" src="images/logos/JACKADDDER.png">
+    <img class="NEC" src="images/logos/NEC.png">             
+    <img class="DASH" src="images/logos/dash.png">
+    <img class="ASPL" src="images/logos/ASPL.png">
+    <img class="VERTICAL" src="">
+    <img class="RELATIONAL" src="images/logos/relational.png">
+     </div>
+    </div>
+        </div>
           
     <!--Please add the actual copyright symbol in this section-->
-        <div class="copyright_"><h4> &copy Copyright Patrick Alegria, Reema Bali and James Olsen</h4>   
+        <div class="copyright_"><h4>&copy Copyright Patrick Alegria, Reema Bali and James Olsen</h4>   
         
-    </div>     
+    </div>      
             
     <div class="social_media_icons_homepage">
     <!--need to insert facebook, instagram, twitter, cdu logo (directs people to the website), youtube, and google+-->    
-    <img>
-    <img>
-    <img>
-    <img>
-    <img>    
+ <img src="images/social%2520media%2520icons/cdu_logo.jpg" alt="cdu_logo_website">
+        <img src="images/social%2520media%2520icons/facebook.png" alt="facebook_logo">
+        <img src="images/social%2520media%2520icons/instagram.jpg" alt="instagram_logo">
+        <img src="images/social%2520media%2520icons/twitter.png" alt="twitter_logo">     
     </div>
         
         

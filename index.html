@@ -4,52 +4,81 @@
 
 <head>
     
+ <title>IT CODE FAIR| Home</title>
+ <meta name="description" content="IT CODE FAIR 2017"/>
+ <meta name="keywords" content="HTML5,CSS,JS, HIT 226, IT CODE FAIR 2017"/>
+ <meta name="developers" content="Patrick Alegria, Reema Bali and James Olsen"/>
+ <meta name="studentid" content="s290816, s252001 and s290380"/> 
+    
+  
+ <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+	<link rel="shortcut icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+	<link rel="apple-touch-icon" href="/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/favicon-144.png">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+    
 <meta http-equiv="content-type" content="text/html; charset=uf\tf-8"/>
+<meta name="viewport" content="width=device-width">
 <link type="text/css" rel="stylesheet" href="css/main.css"/>
 <link type="text/css" rel="stylesheet" href="css/lib/jquery.bxslider.min.css"/>
-<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
 <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
 <script type="text/javascript" src="js/lib/jquery-3.2.0.js"></script>
 <script type="text/javascript" src="js/lib/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/countdown.js"></script>
 </head>
-    
-<body>   
+       <body>
     <div id="clear">
     </div>
     
     
-    <section class=" top_of_page">
+     <section class=" top_of_page">
     <div clas="section_one">
         <div class="wrapper">
             <div id="logo_left">
-            <a href="index.html"><img src="images/itcodefair_logo.png" alt=""></a>
+            <a href="index.html"><img src="images/IT CODE FAIR LOGOS77.png" alt=""></a>
             </div>
-            
-             <div class ="naviagtion"> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="news.html">Recent News</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-             <div clas="section_one light">
+               <div clas="section_one">
         <div class="wrapper" id="top_div">
           <div id="search">
-              <!--Search function jQuery library by Tipue http://www.tipue.com/search/ -->
              <form action="search.html">
-                 <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
-                 <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
-              </form>
+                 <input type="text" name="q" id="tipue_search_input">
+                 <input id="buttonstyle" type="button" name="Search" value="Search"/>
+                </form>
             </div>
         </div>
             </div>
+            <nav>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="schedule.html">Events</a></li>
+                <li><a href="news.html">Recent News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+          
         </div>
     </div>
     </section>
-    
  
                  
     <div id="clear"></div>
@@ -58,29 +87,20 @@
 <!--THIS IS FROM WHERE THE MAIN BODY STARTS STYLE FROM HERE DOWN-->
     
     
-    <div class="slider">
-        <div class="wrapper">
-            <div id="slides">
-                <ul class="bxslider">
-                    <li><img src="images/placeholder_image.png"/></li>
-                    
-                    <li><img src="images/codecode.jpg"/></li>
-                </ul>
+     
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>IT CODE FAIR 2017</h1>
+                <h2>Giving university students platform for creativity!</h2>
             </div>
-        </div>
-    </div>
+           </div>
     
     <div class="timer">
             <div id="timer_img">
             <p id="countdown"></p>
             </div>
     </div>
-        <div class="arrow_1">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-            </div>
-        
-        </div>
+
     
     <div class="bodytext">
         <div class="mainhead">
@@ -91,67 +111,62 @@
 <!-- these two below need to be buttons use html and java scipt then i can style them+-->
             <div class="sub_bodytext_right">
             <div id="right_content">
-            <h3>SIGN UP</h3>
+            <h3><a href="signup.html">SIGN UP</a></h3>
             </div>
-    </div>
-
-    
-     <div class="sub_bodytext_right">
-            <div id="right_content">
-            <h3>FIND OUT MORE</h3>
+            <div id="left_content">
+            <h3><a href="about.html">FIND OUT MORE</a></h3>
             </div>
     </div>
     </div>
     </div>
     
    
-    
-        <div class="arrow_3">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-        
-        </div>
-    </div>
-    
+  
     <div id="clear">
     </div>
     
     <div class="section_two">  
         <div class="mini_about">
         <h2>ABOUT US</h2>    
-        <p> CDU IT Code Fair is competition created insert date to show case student’s talents in the area of IT and designing. Students can win awards and prizes for their talents.</p>
+        <p> CDU IT Code Fair is competition that started in 2014 to showcase university student’s talents in the area of IT and designing. Ever since starting the competition has had a massive success and wants to grow even more! Students can win awards, prizes and could potentially even score themselves a job! </p>
+        </div>
+        
+     <div class="section_img1">  
+        <img src="images/fair_pics/use1_homepage.jpg">
         </div>
     </div>
-    
-     <div class="arrow_2">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-            </div>
+        
+<div id="clear">
     </div>
+    
+
         
     <div class="section_three">  
         <div class="awards_jobs">
         <h2>AWARDS, PRIZES AND JOBS</h2>
         <p>Want to win prizes? Want a job in the IT industry? Then your career can start here. Earn prizes and you might even score yourself a job!</p>
         </div>
+        
+        <div class="section_img2">  
+        <img src="images/fair_pics/use2_homepage.jpg">
+        </div>
     </div>
-         <div class="arrow_3">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-            </div>
+           <div id="clear">
+    </div>
     
+
+ 
     <div class="section_four">
          <div class="experts_judges">
         <h2>EXPERT AND INDUSTRY CRITIQUE</h2>
         <p>Want your worked to be reviewed by industry experience people? Our judging panel has members from our wide range of sponsors. See how your creations stack up against the real world. </p>
         </div>
+         <div class="section_img3">  
+        <img src="images/fair_pics/use3_homepage.jpg">
+        </div>
     </div>
 
-     <div class="arrow_2">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-            </div>
-    </div>
+
     
     <div id="clear">
     </div>
@@ -163,13 +178,13 @@
     </div>     
     <div class="code_category"></div>
     <div class="design_category"></div>
+     <div class="section_img4">  
+        <img src="images/fair_pics/use4_hompage.jpg">
+        </div>
     </div>
 
-<div class="arrow_3">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-            </div>
-    </div>
+
+
     
     <div id="clear">
     </div>
@@ -178,20 +193,31 @@
     <div class="sponsor_info">
     <h2>SUPPORTED BY NATIONAL WIDE COMPANIES</h2>
     <p>There would not be any competition without the support of out wonderful sponsors. We are grateful to have such a wonder sponsor team</p>
-    </div>
-
-        <div class="arrow_2">
-            <div id="arrow_img">
-            <img src="images/Down-Arrow-PNG-Clipart.png">
-            </div>
-    </div>
         
-<!--will be styled when the images are in-->
-    <div class="sponsor_list_homepage">
-    <!--gotta insert all the sponsors as images here-->    
     <img>    
     </div>
+
+        
+    <div class="spons_img">
+    <div class="sponsor_list_homepage">
+   <img class="NTG" src="images/logos/NTG.png">
+    <img class="ICTNT" src="images/logos/ICCTNT.png">
+    <img class="DIALOG" src="images/logos/Dialog.png">
+    <img class="CAPTOVATE" src="images/logos/captovate.png">
+    <img class="ACS" src="images/logos/ACS.png">
+    <img class="RADICAL" src="images/logos/RADICAL.png">
+    <img class="DOLPHIN" src="images/logos/dolphjin.png">
+    <img class="KINETIC" src="images/logos/KINITICIT.png">
+    <img class="JACKADDER" src="images/logos/JACKADDDER.png">
+    <img class="NEC" src="images/logos/NEC.png">             
+    <img class="DASH" src="images/logos/dashTwo.png">
+    <img class="ASPL" src="images/logos/ASPL.png">
+    <img class="VERTICAL" src="images/logos/vertical.png">
+    <img class="RELATIONAL" src="images/logos/relational.png">   
     </div>
+    </div>
+    </div>
+    
     
     <div id="clear">
     </div>
@@ -199,53 +225,58 @@
 <div class="footer_">
     <footer class="footer_one"> 
     
-    <div class="footer_one_list_one">
+     <div class="footer_one_list_one">
+    
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="news.html">Recent News</a></li>
-    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="schedule.html">Events</a></li>
     <li><a href="signup.html">Sign Up</a></li>
     <li><a href="contact.html">Contact</a></li>  
     </ul>
     </div>
         
     <div class="footer_one_list_two">
+    
     <ul>
     <li><a href="about.html#main_about">About</a></li>
     <li><a href="about.html#main_prizes">Prizes</a></li>
-    <li><a href="about.html#main_judges">Judging Panel</a></li>
-    <li><a href="schedule.html">Schedule</a></li>
-    <li><a href="about.html#main_sponsor">Sponsors</a></li>
-    <li><a href="signup.html">Sign Up</a></li>  
+    <li><a href="schedule.html">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html#main_location">Location</a></li>
+    <li><a href="sponsers.html">Sponsors</a></li>
     </ul>
     </div>
         
     <div class="footer_one_list_three">
+    
     <ul>
-    <li><a href="about.html#main_location">Location</a></li>
     <li><a href="tutorials.html">Tutorials</a></li>
     <li><a href="becomesponsor.html">Become a Sponsor</a></li>
     <li><a href="http://www.cdu.edu.au/">CDU Website</a></li>
     <li><a href="https://www.facebook.com/CharlesDarwinUniversity/">Facebook</a></li>
-    <li><a href="https://www.instagram.com/charlesdarwinuniversity/">Instagram</a></li> 
+    <li><a href="https://www.instagram.com/charlesdarwinuniversity/">Instagram</a></li>
+    <li><a href="https://twitter.com/CDUni">Twitter</a></li>
     </ul>
-        </div>
+    </div>
    
-<!--Please add the actual copyright symbol in this section-->
+ <div class="social_media_icons_homepage">
+    <!--Please add the actual copyright symbol in this section-->
         <div class="copyright_"><h4>&copy Copyright Patrick Alegria, Reema Bali and James Olsen</h4>   
         
-    </div>    
+    </div>      
             
-    <div class="social_media_icons_homepage">
+    <div class="icon_style">
+    <div class="social_icon">
     <!--need to insert facebook, instagram, twitter, cdu logo (directs people to the website), youtube, and google+-->    
-    <img>
-    <img>
-    <img>
-    <img>
-    <img>    
+ <img src="images/sm_icons/cdu_logo.png">
+        <img src="images/sm_icons/facebook.png" alt="facebook_logo">
+        <img src="images/sm_icons/instagram.png">
+        <img src="images/sm_icons/twitter.png" alt="twitter_logo">    
     </div>
-        
+        </div>
+        </div>
         
     </footer>
         
@@ -253,6 +284,5 @@
 </body>
 
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/countdown.js"></script>
  
 </html>
